@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Karim's first js app</title>
+  </head>
+
+  <body>
+    <!-- Empty <body> HTML (the JavaScript code in <script> will generate a button here)-->
+
+    <script>
+      var karim = "cool";
+      // Create a button element
+      const button = document.createElement("button");
+
+      // Set the button text to 'Can you click me?'
+      button.innerText = "run my awsome code!";
+
+      button.id = "mainButton";
+
+      // Attach the "click" event to your button
+      button.addEventListener("click", () => {
+        // When there is a "click"
+        // it shows an alert in the browser
+        //variables
+        var test = prompt("what do you want to write");
+        var test3 = test + " ";
+        var test2 = "the text thats gonna get written is " + test;
+        //lazy basic js code
+        alert(test2);
+        alert(test);
+        alert("made by karim");
+        document.write(test);
+        document.write("\n");
+        console.log("made by karim :)");
+        document.title = test;
+      });
+
+      document.body.appendChild(button);
+    </script>
+  </body>
+</html>
